@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SingleHomeMadeProduct from "./SingleHomeMadeProduct";
-import { products } from "./HomeMadeProductsData";
+import { products } from "../api/data";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 20 },
