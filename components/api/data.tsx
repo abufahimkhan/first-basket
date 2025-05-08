@@ -12,6 +12,7 @@ type ProductFeature = {
 export type Product = {
   id: number;
   title: string;
+  category: string;
   image: StaticImageData | string; // ✅ Allow StaticImageData or string
   features: ProductFeature[];
   price: string;
@@ -21,28 +22,16 @@ export type Product = {
   rating: number;
   reviews: number;
 };
-
 export const products: Product[] = [
   {
     id: 1,
+    category: "beauty",
     title: "Korean Skincare Anti-Aging, Dark Spot Wrinkle Minimizing Toner",
     image: cosmeticsImage.nailPolish,
     features: [
-      {
-        icon: (
-          <FlaskConical className="w-4 h-4 mt-[2px] shrink-0 text-pink-500" />
-        ),
-        text:
-          "Hydrating with Snail Mucin, Centella Asiatica, Niacinamide, Peptides",
-      },
-      {
-        icon: <Package className="w-4 h-4 mt-[2px] shrink-0" />,
-        text: "Eucalyptus · 100 Count (Pack of 1)",
-      },
-      {
-        icon: <Droplet className="w-4 h-4 mt-[2px] shrink-0" />,
-        text: "9K+ bought in past month",
-      },
+      { icon: <FlaskConical className="..." />, text: "Hydrating..." },
+      { icon: <Package className="..." />, text: "Eucalyptus · 100 Count..." },
+      { icon: <Droplet className="..." />, text: "9K+ bought..." },
     ],
     price: "$59.95",
     unitPrice: "($0.60 / Count)",
@@ -53,24 +42,13 @@ export const products: Product[] = [
   },
   {
     id: 2,
+    category: "grocery",
     title: "Vitamin C Glow Serum with Hyaluronic Acid & Turmeric",
     image: groceryImage.groc,
     features: [
-      {
-        icon: (
-          <FlaskConical className="w-4 h-4 mt-[2px] shrink-0 text-pink-500" />
-        ),
-        text:
-          "Brightens dull skin and evens tone using natural botanicals and Vitamin C",
-      },
-      {
-        icon: <Package className="w-4 h-4 mt-[2px] shrink-0" />,
-        text: "1 oz · Dropper Bottle",
-      },
-      {
-        icon: <Droplet className="w-4 h-4 mt-[2px] shrink-0" />,
-        text: "5K+ bought in past month",
-      },
+      { icon: <FlaskConical className="..." />, text: "Brightens dull skin..." },
+      { icon: <Package className="..." />, text: "1 oz · Dropper Bottle" },
+      { icon: <Droplet className="..." />, text: "5K+ bought..." },
     ],
     price: "$24.50",
     unitPrice: "($24.50 / oz)",
@@ -81,24 +59,13 @@ export const products: Product[] = [
   },
   {
     id: 3,
+    category: "beauty",
     title: "Herbal Clay Face Mask - Detox & Pore Minimizer",
     image: cosmeticsImage.nailPolish,
     features: [
-      {
-        icon: (
-          <FlaskConical className="w-4 h-4 mt-[2px] shrink-0 text-pink-500" />
-        ),
-        text:
-          "Made with Bentonite clay, green tea, and charcoal for deep detox",
-      },
-      {
-        icon: <Package className="w-4 h-4 mt-[2px] shrink-0" />,
-        text: "4 oz · Jar",
-      },
-      {
-        icon: <Droplet className="w-4 h-4 mt-[2px] shrink-0" />,
-        text: "2K+ bought in past month",
-      },
+      { icon: <FlaskConical className="..." />, text: "Made with Bentonite..." },
+      { icon: <Package className="..." />, text: "4 oz · Jar" },
+      { icon: <Droplet className="..." />, text: "2K+ bought..." },
     ],
     price: "$18.00",
     unitPrice: "($4.50 / oz)",
@@ -109,24 +76,13 @@ export const products: Product[] = [
   },
   {
     id: 4,
+    category: "grocery",
     title: "Gentle Foaming Cleanser for Sensitive Skin",
-    image:  groceryImage.groc,
+    image: groceryImage.groc,
     features: [
-      {
-        icon: (
-          <FlaskConical className="w-4 h-4 mt-[2px] shrink-0 text-pink-500" />
-        ),
-        text:
-          "Fragrance-free and soap-free formula with aloe vera and ceramides",
-      },
-      {
-        icon: <Package className="w-4 h-4 mt-[2px] shrink-0" />,
-        text: "6.7 fl oz · Pump Bottle",
-      },
-      {
-        icon: <Droplet className="w-4 h-4 mt-[2px] shrink-0" />,
-        text: "8K+ bought in past month",
-      },
+      { icon: <FlaskConical className="..." />, text: "Fragrance-free..." },
+      { icon: <Package className="..." />, text: "6.7 fl oz · Pump Bottle" },
+      { icon: <Droplet className="..." />, text: "8K+ bought..." },
     ],
     price: "$12.99",
     unitPrice: "($1.94 / fl oz)",
@@ -137,11 +93,12 @@ export const products: Product[] = [
   },
   {
     id: 5,
+    category: "beauty",
     title: "Handmade Soap",
     image: cosmeticsImage.nailPolish,
     features: [
-      { icon: <Sparkle className="w-4 h-4" />, text: "Organic Ingredients" },
-      { icon: <Sparkle className="w-4 h-4" />, text: "Scented with Lavender" },
+      { icon: <Sparkle className="..." />, text: "Organic Ingredients" },
+      { icon: <Sparkle className="..." />, text: "Scented with Lavender" },
     ],
     price: "$12",
     unitPrice: "$4/oz",
@@ -152,11 +109,12 @@ export const products: Product[] = [
   },
   {
     id: 6,
+    category: "beauty",
     title: "Beeswax Candles",
     image: cosmeticsImage.nailPolish,
     features: [
-      { icon: <Sparkle className="w-4 h-4" />, text: "Slow-burning" },
-      { icon: <Sparkle className="w-4 h-4" />, text: "Natural fragrance" },
+      { icon: <Sparkle className="..." />, text: "Slow-burning" },
+      { icon: <Sparkle className="..." />, text: "Natural fragrance" },
     ],
     price: "$18",
     unitPrice: "$6/each",
@@ -167,11 +125,12 @@ export const products: Product[] = [
   },
   {
     id: 7,
+    category: "homemade",
     title: "Knitted Scarf",
-    image:  groceryImage.groc,
+    image: groceryImage.groc,
     features: [
-      { icon: <Sparkle className="w-4 h-4" />, text: "Soft wool blend" },
-      { icon: <Sparkle className="w-4 h-4" />, text: "Hand-stitched" },
+      { icon: <Sparkle className="..." />, text: "Soft wool blend" },
+      { icon: <Sparkle className="..." />, text: "Hand-stitched" },
     ],
     price: "$30",
     unitPrice: "$30/item",
@@ -182,11 +141,12 @@ export const products: Product[] = [
   },
   {
     id: 8,
+    category: "homemade",
     title: "Ceramic Mug",
     image: cosmeticsImage.nailPolish,
     features: [
-      { icon: <Sparkle className="w-4 h-4" />, text: "Microwave safe" },
-      { icon: <Sparkle className="w-4 h-4" />, text: "Unique glaze pattern" },
+      { icon: <Sparkle className="..." />, text: "Microwave safe" },
+      { icon: <Sparkle className="..." />, text: "Unique glaze pattern" },
     ],
     price: "$20",
     unitPrice: "$20/pc",
@@ -197,11 +157,12 @@ export const products: Product[] = [
   },
   {
     id: 9,
+    category: "homemade",
     title: "Leather Journal",
-    image:  groceryImage.groc,
+    image: groceryImage.groc,
     features: [
-      { icon: <Sparkle className="w-4 h-4" />, text: "Recycled paper" },
-      { icon: <Sparkle className="w-4 h-4" />, text: "Hand-bound cover" },
+      { icon: <Sparkle className="..." />, text: "Recycled paper" },
+      { icon: <Sparkle className="..." />, text: "Hand-bound cover" },
     ],
     price: "$35",
     unitPrice: "$35/book",
@@ -212,11 +173,12 @@ export const products: Product[] = [
   },
   {
     id: 10,
+    category: "beauty",
     title: "Macrame Plant Hanger",
     image: cosmeticsImage.nailPolish,
     features: [
-      { icon: <Sparkle className="w-4 h-4" />, text: "100% cotton rope" },
-      { icon: <Sparkle className="w-4 h-4" />, text: "Supports all pot sizes" },
+      { icon: <Sparkle className="..." />, text: "100% cotton rope" },
+      { icon: <Sparkle className="..." />, text: "Supports all pot sizes" },
     ],
     price: "$22",
     unitPrice: "$22/set",
@@ -227,11 +189,12 @@ export const products: Product[] = [
   },
   {
     id: 11,
+    category: "homemade",
     title: "Homemade Jam Set",
     image: cosmeticsImage.nailPolish,
     features: [
-      { icon: <Sparkle className="w-4 h-4" />, text: "No preservatives" },
-      { icon: <Sparkle className="w-4 h-4" />, text: "3 flavors included" },
+      { icon: <Sparkle className="..." />, text: "No preservatives" },
+      { icon: <Sparkle className="..." />, text: "3 flavors included" },
     ],
     price: "$25",
     unitPrice: "$8/jar",
@@ -242,11 +205,12 @@ export const products: Product[] = [
   },
   {
     id: 12,
+    category: "homemade",
     title: "Wooden Cutting Board",
     image: cosmeticsImage.nailPolish,
     features: [
-      { icon: <Sparkle className="w-4 h-4" />, text: "Bamboo material" },
-      { icon: <Sparkle className="w-4 h-4" />, text: "Easy to clean" },
+      { icon: <Sparkle className="..." />, text: "Bamboo material" },
+      { icon: <Sparkle className="..." />, text: "Easy to clean" },
     ],
     price: "$28",
     unitPrice: "$28/each",
@@ -257,23 +221,13 @@ export const products: Product[] = [
   },
   {
     id: 13,
+    category: "beauty",
     title: "Soothing Aloe Vera Gel",
     image: cosmeticsImage.nailPolish,
     features: [
-      {
-        icon: <Droplet className="w-4 h-4 mt-[2px] shrink-0" />,
-        text: "Cools and hydrates sunburned skin",
-      },
-      {
-        icon: (
-          <FlaskConical className="w-4 h-4 mt-[2px] shrink-0 text-pink-500" />
-        ),
-        text: "Pure Aloe Extract · No added fragrance",
-      },
-      {
-        icon: <Package className="w-4 h-4 mt-[2px] shrink-0" />,
-        text: "8 fl oz · Tube",
-      },
+      { icon: <Droplet className="..." />, text: "Cools and hydrates..." },
+      { icon: <FlaskConical className="..." />, text: "Pure Aloe Extract..." },
+      { icon: <Package className="..." />, text: "8 fl oz · Tube" },
     ],
     price: "$10.99",
     unitPrice: "($1.37 / fl oz)",
@@ -284,21 +238,13 @@ export const products: Product[] = [
   },
   {
     id: 14,
+    category: "beauty",
     title: "Herbal Lip Balm 4-Pack",
     image: cosmeticsImage.nailPolish,
     features: [
-      {
-        icon: <Sparkle className="w-4 h-4" />,
-        text: "Infused with beeswax and peppermint",
-      },
-      {
-        icon: <Package className="w-4 h-4" />,
-        text: "4 Tubes · Travel Friendly",
-      },
-      {
-        icon: <Droplet className="w-4 h-4" />,
-        text: "Long-lasting moisture",
-      },
+      { icon: <Sparkle className="..." />, text: "Infused with beeswax..." },
+      { icon: <Package className="..." />, text: "4 Tubes..." },
+      { icon: <Droplet className="..." />, text: "Long-lasting moisture" },
     ],
     price: "$8.99",
     unitPrice: "($2.25 / tube)",
@@ -309,21 +255,13 @@ export const products: Product[] = [
   },
   {
     id: 15,
+    category: "beauty",
     title: "Aromatherapy Essential Oil Set",
     image: cosmeticsImage.nailPolish,
     features: [
-      {
-        icon: <Sparkle className="w-4 h-4" />,
-        text: "Includes Lavender, Eucalyptus, Lemon, Tea Tree",
-      },
-      {
-        icon: <FlaskConical className="w-4 h-4 text-pink-500" />,
-        text: "Steam-distilled · 10ml each",
-      },
-      {
-        icon: <Package className="w-4 h-4" />,
-        text: "Pack of 4",
-      },
+      { icon: <Sparkle className="..." />, text: "Includes Lavender..." },
+      { icon: <FlaskConical className="..." />, text: "Steam-distilled..." },
+      { icon: <Package className="..." />, text: "Pack of 4" },
     ],
     price: "$22.00",
     unitPrice: "($5.50 / bottle)",
@@ -334,21 +272,13 @@ export const products: Product[] = [
   },
   {
     id: 16,
+    category: "beauty",
     title: "Reusable Cotton Rounds",
     image: cosmeticsImage.nailPolish,
     features: [
-      {
-        icon: <Droplet className="w-4 h-4" />,
-        text: "Machine washable and eco-friendly",
-      },
-      {
-        icon: <Sparkle className="w-4 h-4" />,
-        text: "Soft bamboo cotton material",
-      },
-      {
-        icon: <Package className="w-4 h-4" />,
-        text: "Includes 20 rounds & laundry bag",
-      },
+      { icon: <Droplet className="..." />, text: "Machine washable..." },
+      { icon: <Sparkle className="..." />, text: "Soft bamboo cotton..." },
+      { icon: <Package className="..." />, text: "Includes 20 rounds..." },
     ],
     price: "$14.99",
     unitPrice: "($0.75 / round)",
@@ -359,21 +289,13 @@ export const products: Product[] = [
   },
   {
     id: 17,
+    category: "beauty",
     title: "Mini Jade Roller & Gua Sha Set",
     image: cosmeticsImage.nailPolish,
     features: [
-      {
-        icon: <Sparkle className="w-4 h-4" />,
-        text: "Reduces puffiness and improves circulation",
-      },
-      {
-        icon: <Droplet className="w-4 h-4" />,
-        text: "Natural jade stone",
-      },
-      {
-        icon: <Package className="w-4 h-4" />,
-        text: "Includes pouch for travel",
-      },
+      { icon: <Sparkle className="..." />, text: "Reduces puffiness..." },
+      { icon: <Droplet className="..." />, text: "Natural jade stone" },
+      { icon: <Package className="..." />, text: "Includes pouch..." },
     ],
     price: "$16.50",
     unitPrice: "$16.50/set",
