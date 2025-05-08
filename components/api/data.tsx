@@ -1,4 +1,4 @@
-import { cosmeticsImage } from "@/assets";
+import { cosmeticsImage, groceryImage } from "@/assets";
 import { Droplet, FlaskConical, Package, Sparkle } from "lucide-react";
 import { StaticImageData } from "next/image";
 import React from "react";
@@ -54,7 +54,7 @@ export const products: Product[] = [
   {
     id: 2,
     title: "Vitamin C Glow Serum with Hyaluronic Acid & Turmeric",
-    image: cosmeticsImage.nailPolish,
+    image: groceryImage.groc,
     features: [
       {
         icon: (
@@ -110,7 +110,7 @@ export const products: Product[] = [
   {
     id: 4,
     title: "Gentle Foaming Cleanser for Sensitive Skin",
-    image: cosmeticsImage.nailPolish,
+    image:  groceryImage.groc,
     features: [
       {
         icon: (
@@ -168,7 +168,7 @@ export const products: Product[] = [
   {
     id: 7,
     title: "Knitted Scarf",
-    image: cosmeticsImage.nailPolish,
+    image:  groceryImage.groc,
     features: [
       { icon: <Sparkle className="w-4 h-4" />, text: "Soft wool blend" },
       { icon: <Sparkle className="w-4 h-4" />, text: "Hand-stitched" },
@@ -198,7 +198,7 @@ export const products: Product[] = [
   {
     id: 9,
     title: "Leather Journal",
-    image: cosmeticsImage.nailPolish,
+    image:  groceryImage.groc,
     features: [
       { icon: <Sparkle className="w-4 h-4" />, text: "Recycled paper" },
       { icon: <Sparkle className="w-4 h-4" />, text: "Hand-bound cover" },
