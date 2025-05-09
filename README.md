@@ -1,91 +1,146 @@
-# Solid - Free Next.js Web Template and Starter Kit for SaaS
+[![Shopco Screenshot](https://github.com/mohammadoftadeh/repo-assets/blob/main/shopco-cover.png?raw=true)](https://next-ecommerce-shopco.vercel.app/)
 
-Solid is a free Next.js template specifically crafted for startups, SaaS, and software websites. It provides an extensive array of necessary sections, elements, and pages required to build a fully-equipped website for any SaaS, software, or startup site. Comes with all cutting edge React and Next.js features - **Built with Next.js 13, React 18 and TypeScript.**
+# Shopco
 
-This Next.js template's homepage comes with an awesome hero area, logos of associated brands, a features section, an about section, another features section with tabs, counters, and star ratings, integration options, clear call-to-actions, an FAQ section with accordions, a testimonials section, pricing tables, a contact page, a blog, and a distinctive footer.
+Shopco is an open-source project that converts a Figma design of an e-commerce website into a fully responsive front-end application. It utilizes **Next.js 14 App Router**, **TypeScript**, **Tailwind CSS**, **Redux**, **Framer Motion**, and **ShadCN UI** to deliver a modern, scalable, and optimized solution based on industry standards.
 
-**Solid Next.js template packed with all necessary external pages** - such as login, registration, blog grids, and single blog pages, among others. This broad collection of pages provides all the necessary tools to create a feature-packed, comprehensive, and visually appealing website or landing page for software, a web application, or SaaS.
+## Table of Contents
 
-### [🔥 Get Solid Pro - Next.js SaaS Boilerplate and Starter Kit](https://nextjstemplates.com/templates/solid)
+- [Shopco](#shopco)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Demo](#demo)
+  - [Features](#features)
+  - [Technologies](#technologies)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Project Structure](#project-structure)
+  - [Contributing](#contributing)
+  - [Issues](#issues)
+  - [License](#license)
+  - [Contact](#contact)
 
-### [🚀 Solid PRO Live Demo](https://solid.nextjstemplates.com/)
+## Overview
 
-### [🚀 Solid FREE Live Demo](https://solid-free.nextjstemplates.com/)
+Shopco bridges the gap between design and development by converting Figma designs into production-ready code. The project follows best practices for **SEO**, **performance optimization**, and **accessibility**, making it a perfect foundation for developers looking to create scalable and maintainable e-commerce front-ends.
 
-### Solid PRO vs Solid FREE Comparison 📊
+## Demo
 
-#### [Solid PRO](https://solid.nextjstemplates.com/)
-- SaaS Boilerplate + Starter Kit with Essential Integrations and Functionalities
-- Essential Integrations: Auth, DB, Stripe, MDX and More ...
-- Fully Functional, Ready to Use Sanity Blog Support
-- Premium Email Support
-- Functional External Pages
-- Free Lifetime Future Updates
-___
-#### [Solid FREE](https://solid-free.nextjstemplates.com/)
-- Only UI - Coded for Next.js
-- No Integrations
-- No Functional Blogging System
-- External Pages without Functions/Integrations
-- Community Support
-- Free Lifetime Future Updates
-___
+Check out the live demo: [Shopco Demo](https://next-ecommerce-shopco.vercel.app/)
 
-### [📦 Download](https://nextjstemplates.com/templates/solid)
+<!-- [![Shopco Screenshot](https://github.com/mohammadoftadeh/repo-assets/blob/main/shopco-cover.png?raw=true)](https://next-ecommerce-shopco.vercel.app/) -->
 
-### [🔥 Get Pro](https://nextjstemplates.com/templates/solid)
+## Features
 
-### [🔌 Documentation](https://nextjstemplates.com/docs)
+- **Next.js 14**: Server-side rendering (SSR), Static Site Generation (SSG), optimized routing, and API integrations.
+- **TypeScript**: Strongly typed code for better error detection and maintainability.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Redux**: State management for managing the shopping cart and other global states.
+- **Framer Motion**: Smooth animations and transitions for an enhanced user experience.
+- **ShadCN UI**: Beautifully styled, accessible, and customizable UI components.
+- **Fully Responsive**: Mobile-first design ensuring the layout adapts across devices.
+- **Performance Optimized**: Best practices followed for fast loading and interaction.
+- **Accessible**: Built with accessibility standards to provide an inclusive experience.
 
-### ⚡ Deploy Now
+## Technologies
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fsolid-nextjs)
-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/solid-nextjs)
-
+- **Next.js 14** - A popular React framework with built-in SSR and optimization.
+- **TypeScript** - A superset of JavaScript for strong typing and code consistency.
+- **Tailwind CSS** - A utility-first CSS framework for fast, responsive design.
+- **Redux** - A state management library used for the shopping cart and global app state.
+- **Framer Motion** - A library for animations and interactions in React.
+- **ShadCN UI** - A collection of beautiful, accessible, and customizable UI components.
+- **Figma** - The design tool used as the source of the project’s layout. The [Figma file](https://www.figma.com/community/file/1273571982885059508/e-commerce-website-template-freebie) designed by [Hamza Naeem](https://www.figma.com/@hamzauix)
 
 ## Installation
 
-Here are the steps you need to follow to install the dependencies.
+To get started with Shopco locally, follow these steps:
 
-1.Download and extract the template from **Next.js Templates.**
+1. **Clone the repository:**
 
-2.**cd** into the template directory then run this command to install all the dependencies
-    
+   ```bash
+   git clone https://github.com/mohammadoftadeh/next-ecommerce-shopco.git
+   cd next-ecommerce-shopco
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+   ```bash
+   yarn install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   ```bash
+   yarn dev
+   ```
+
+4. **Open in your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to view the app.
+
+## Usage
+
+- To explore or modify the code, navigate through the `components`, `features`, and `app` directories.
+- The shopping cart logic is managed using **Redux**. You can find the store configuration and cart actions in the `src/lib/features` directory.
+- **ShadCN UI** components are used across the app. They can be customized in the `src/components/ui` directory.
+- You can easily modify and extend the project to suit your needs, whether for personal use or professional projects.
+
+## Project Structure
+
 ```bash
-    npm install --legacy-peer-deps
+Shopco/
+│
+├── public/                # Static assets
+├── src/
+│   ├── app/               # Next.js App Router
+│   ├── components/        # Reusable components (including ShadCN UI components)
+│   └── lib/
+│       ├── features/      # The Redux logics for features (e.g., shopping cart)
+│       ├── hooks/         # Custom React hooks
+│       ├── store.ts       # Redux store
+│       ├── utils.ts       # Utility functions
+│   ├── styles/            # Tailwind CSS styles (global, utilities and fonts)
+│   ├── types/             # TypeScript types
+│
+├── components.json         # ShadCN UI configuration
+├── next.config.mjs         # Next.js configuration
+├── package.json            # Node.js dependencies and scripts
+├── postcss.config.mjs      # Post CSS configuration
+└── README.md               # Project documentation
+├── tailwind.config.js      # Tailwind CSS configuration
+├── tsconfig.json           # TypeScript configuration
 ```
-**Note:** As of right now React 19 causes peer dependencies issues with some packages, so the `legacy-peer-deps` flag is required.
 
-You can start the project on the local server
-    
-```bash
-    npm run dev
- ```
+## Contributing
 
-It’ll start the template on [localhost:3000](http://localhost:3000). 
+Contributions are welcome! If you'd like to contribute, Please follow these steps to contribute to Shopco:
 
-The documentation includes all the guides you need for the integrations. 
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes.
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a pull request.
 
+## Issues
 
-### Deploying on PaaS
+Feel free to submit issues for any bugs, feature requests, or general questions related to the project. You can also reach out via [email](mailto:mr.mohammadoftadeh@gmail.com) for support.
 
-If you are using a GitHub repo then you can go with free-of-cost and easy-to-use options like [Vercel](https://vercel.com/), or [Netlify](https://netlify.com/) they offer decent-free tiers for Next.js hosting.
+## License
 
-### 📄 License
-Solid Free is 100% free and open-source, feel free to use with your personal and commercial projects.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.
 
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
+## Contact
 
-### ✨ Browse and Download - Best Free [Next.js Templates](https://nextjstemplates.com/templates)
+Feel free to reach out to:
 
-### Update Log
-
-**10 April 2025**
-- Update eslint to v9.24.0 to resolve peer deps warning during installation.
-- Migrate to tailwind v4
-
-**29 Jan 2025**
-- Upgraded to Next.js 15
-- Update framer-motion to v12.0.6 for React 19 support.
+- **Name**: Mohammad Oftadeh
+- **Email**: [mr.mohammadoftadeh@gmail.com](mailto:mr.mohammadoftadeh@gmail.com)
+- **GitHub**: [https://github.com/mohammadoftadeh](https://github.com/mohammadoftadeh)
